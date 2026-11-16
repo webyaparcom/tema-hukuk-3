@@ -1,0 +1,91 @@
+<header class="modulex-ust-gazete-sutun{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ust-gazete-sutun-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</header>
+
+<style>
+  /* ust-gazete-sutun — Menü yatay satır değil, gazete/bülten içindekiler sütunu (CSS sütunları + sütun çizgisi): çok sayfayı düğmesiz, tek bakışta düzenli gösterir. */
+  .modulex-ust-gazete-sutun { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ust-gazete-sutun *, .modulex-ust-gazete-sutun *::before, .modulex-ust-gazete-sutun *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ust-gazete-sutun :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ust-gazete-sutun :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ust-gazete-sutun :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ust-gazete-sutun :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ust-gazete-sutun img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ust-gazete-sutun) img { height: auto; }
+  .modulex-ust-gazete-sutun [hidden] { display: none !important; }
+  .modulex-ust-gazete-sutun :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ust-gazete-sutun :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ust-gazete-sutun-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ust-gazete-sutun-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ust-gazete-sutun--bassiz .modulex-ust-gazete-sutun-bas { display: none; }
+  .modulex-ust-gazete-sutun-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ust-gazete-sutun-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ust-gazete-sutun-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ust-gazete-sutun-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ust-gazete-sutun-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ust-gazete-sutun-dugme:hover { transform: translateY(-2px); }
+  .modulex-ust-gazete-sutun-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ust-gazete-sutun-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ust-gazete-sutun-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ust-gazete-sutun { position: relative; z-index: 900; }
+  .modulex-ust-gazete-sutun-logo { display: inline-flex; flex: 0 1 auto; min-width: 0; align-items: center; color: inherit; text-decoration: none; }
+  /* dar ekranda geniş logo/uzun ad çubuğu taşırmasın: logo daralır (img max-width 100%), ad sarar */
+  .modulex-ust-gazete-sutun-logo img { width: auto; max-height: --logoH--; }
+  .modulex-ust-gazete-sutun-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modulex-ust-gazete-sutun-oge { position: relative; display: inline-flex; align-items: center; min-height: 44px; color: inherit; font-weight: 600; text-decoration: none; transition: color 0.2s ease, background 0.2s ease; }
+  .modulex-ust-gazete-sutun-oge:hover, .modulex-ust-gazete-sutun-oge[aria-current="page"] { color: --accentInk--; }
+  .modulex-ust-gazete-sutun-cta { display: inline-flex; flex: none; align-items: center; gap: 6px; min-height: 44px; padding: 8px 18px; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; white-space: nowrap; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .modulex-ust-gazete-sutun-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -12px --accent--; }
+  .modulex-ust-gazete-sutun-cta .material-symbols-outlined, .modulex-ust-gazete-sutun-tel .material-symbols-outlined, .modulex-ust-gazete-sutun-posta .material-symbols-outlined { font-size: 18px; }
+  .modulex-ust-gazete-sutun-tel, .modulex-ust-gazete-sutun-posta { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; white-space: nowrap; }
+  .modulex-ust-gazete-sutun-tel:hover, .modulex-ust-gazete-sutun-posta:hover { color: --accentInk--; }
+  .modulex-ust-gazete-sutun-dil:empty { display: none; }
+  .modulex-ust-gazete-sutun-ac { display: none; align-items: center; gap: 10px; min-width: 46px; min-height: 46px; padding: 0 12px; border: 1px solid --cizgi--; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-weight: 700; }
+  .modulex-ust-gazete-sutun-ac-ikon { display: grid; gap: 4px; width: 20px; }
+  .modulex-ust-gazete-sutun-ac-ikon span { display: block; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+  .modulex-ust-gazete-sutun--acik .modulex-ust-gazete-sutun-ac-ikon span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .modulex-ust-gazete-sutun--acik .modulex-ust-gazete-sutun-ac-ikon span:nth-child(2) { opacity: 0; }
+  .modulex-ust-gazete-sutun--acik .modulex-ust-gazete-sutun-ac-ikon span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .modulex-ust-gazete-sutun-kapat { display: inline-grid; place-items: center; width: 46px; height: 46px; border: 1px solid --cizgi--; border-radius: 50%; background: transparent; color: inherit; }
+  .modulex-ust-gazete-sutun-perde { position: fixed; inset: 0; z-index: 1; background: color-mix(in srgb, --text-- 45%, transparent); animation: modulex-ust-gazete-sutun-sol 0.3s ease both; }
+  @keyframes modulex-ust-gazete-sutun-sol { from { opacity: 0; } to { opacity: 1; } }
+
+  .modulex-ust-gazete-sutun-kunye { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px 0; padding-block: 8px; font-size: 0.85rem; }
+  .modulex-ust-gazete-sutun-kunye > :not(:empty) + * { margin-inline-start: 16px; padding-inline-start: 16px; border-inline-start: 1px solid --cizgi--; }
+  .modulex-ust-gazete-sutun-kunye .modulex-ust-gazete-sutun-cta { min-height: 36px; padding-block: 4px; font-size: 0.82rem; }
+  .modulex-ust-gazete-sutun-govde { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); align-items: end; gap: 16px clamp(24px, 4vw, 56px); padding-block: 14px 18px; border-block: 4px double --text--; }
+  .modulex-ust-gazete-sutun-kafa .modulex-ust-gazete-sutun-ad { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.9rem, 4vw, 3.1rem); font-weight: 700; letter-spacing: -0.015em; }
+  .modulex-ust-gazete-sutun-kafa .modulex-ust-gazete-sutun-logo img { max-height: calc(--logoH-- * 1.3); }
+  .modulex-ust-gazete-sutun-sutunlar { column-count: 3; column-width: 150px; column-gap: 28px; column-rule: 1px solid --cizgi--; }
+  .modulex-ust-gazete-sutun-sutunlar > li { break-inside: avoid; }
+  .modulex-ust-gazete-sutun-soge { display: flex; align-items: center; gap: 8px; min-height: 38px; color: inherit; font-family: Georgia, "Times New Roman", serif; font-size: 1.02rem; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-ust-gazete-sutun-soge::before { content: ""; flex: none; width: 10px; height: 1px; background-color: currentColor; transition: width 0.25s ease; }
+  .modulex-ust-gazete-sutun-soge:hover::before, .modulex-ust-gazete-sutun-soge[aria-current="page"]::before { width: 22px; }
+  .modulex-ust-gazete-sutun-soge:hover, .modulex-ust-gazete-sutun-soge[aria-current="page"] { color: --accentInk--; }
+  .modulex-ust-gazete-sutun-soge[aria-current="page"] { font-style: italic; }
+  @media (max-width: 1024px) {
+    .modulex-ust-gazete-sutun-govde { grid-template-columns: minmax(0, 1fr); align-items: start; }
+    .modulex-ust-gazete-sutun-kunye { justify-content: flex-start; }
+  }
+  @media (max-width: 768px) {
+    .modulex-ust-gazete-sutun-sutunlar { column-count: 2; column-width: auto; column-gap: 20px; }
+    .modulex-ust-gazete-sutun-kunye .modulex-ust-gazete-sutun-posta { display: none; }
+    .modulex-ust-gazete-sutun-kunye > :not(:empty) + * { margin-inline-start: 10px; padding-inline-start: 10px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ust-gazete-sutun :is(.modulex-ust-gazete-sutun-baslik, .modulex-ust-gazete-sutun-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ust-gazete-sutun-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ust-gazete-sutun { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ust-gazete-sutun *, .modulex-ust-gazete-sutun *::before, .modulex-ust-gazete-sutun *::after { animation: none !important; transition: none !important; }
+  }
+</style>

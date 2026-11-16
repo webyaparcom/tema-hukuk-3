@@ -1,0 +1,118 @@
+<section class="modulex-cagri-nobetci{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-nobetci-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* cagri-nobetci — cagri-telefon numarayı koyu zeminde yazı olarak büyütür; bu modül ikaz şeridi iskeleti, canlı açık/kapalı durumu (desing.nobet saat aralığı, istemci saati) ve bölge listesiyle acil servis çağrısı — ailede durum hesaplayan çağrı yok. */
+  .modulex-cagri-nobetci { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-nobetci *, .modulex-cagri-nobetci *::before, .modulex-cagri-nobetci *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-nobetci :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-nobetci :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-nobetci :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-nobetci :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-nobetci img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-nobetci) img { height: auto; }
+  .modulex-cagri-nobetci [hidden] { display: none !important; }
+  .modulex-cagri-nobetci :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-nobetci :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-nobetci-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-nobetci-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-nobetci--bassiz .modulex-cagri-nobetci-bas { display: none; }
+  .modulex-cagri-nobetci-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-nobetci-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-nobetci-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-nobetci-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-nobetci-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-nobetci-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-nobetci-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-nobetci-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-nobetci-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-cagri-nobetci-serit { padding: clamp(8px, 1.2vw, 12px); border-radius: calc(--yuvarlak-- + 8px); background: repeating-linear-gradient(-45deg, --accent-- 0 18px, --yaziRenk-- 18px 36px); background-size: 50.91px 50.91px; animation: modulex-cagri-nobetci-ikaz 1.6s linear infinite; }
+  .modulex-cagri-nobetci-kutu { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center; padding: clamp(24px, 4vw, 48px); border-radius: --yuvarlak--; background: --bg--; }
+  .modulex-cagri-nobetci-yazi { display: grid; gap: 14px; justify-items: start; }
+  .modulex-cagri-nobetci-durum { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 8px 14px; border: 1px solid --cizgi--; border-radius: 999px; background: --kartBg--; font-size: 0.92rem; font-weight: 700; }
+  .modulex-cagri-nobetci-isik { position: relative; flex: none; width: 12px; height: 12px; border-radius: 50%; background: --accent--; }
+  .modulex-cagri-nobetci-isik::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid --accent--; animation: modulex-cagri-nobetci-nabiz 1.6s ease-out infinite; }
+  .modulex-cagri-nobetci--kapali .modulex-cagri-nobetci-isik { background: --muted--; }
+  .modulex-cagri-nobetci--kapali .modulex-cagri-nobetci-isik::after { display: none; }
+  .modulex-cagri-nobetci-dsaat { color: --muted--; font-weight: 600; }
+  .modulex-cagri-nobetci-dyazi + .modulex-cagri-nobetci-dsaat::before { content: "·"; margin-inline-end: 10px; }
+  .modulex-cagri-nobetci-bolgeler { display: grid; gap: 8px; }
+  .modulex-cagri-nobetci-bbas { color: --muted--; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .modulex-cagri-nobetci-bliste { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-cagri-nobetci-bolge { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border-radius: 8px; background: --kartBg--; font-size: 0.92rem; font-weight: 600; transition: background 0.25s ease; }
+  .modulex-cagri-nobetci-bolge:hover { background: color-mix(in srgb, --accent-- 16%, --kartBg--); }
+  .modulex-cagri-nobetci-bikon { color: --accentInk--; font-size: 18px; }
+  .modulex-cagri-nobetci-eylem { display: grid; gap: 14px; }
+  .modulex-cagri-nobetci-ara { display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 84px; padding: 16px 24px; border-radius: --yuvarlak--; background: --accent--; color: --accentText--; font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -0.01em; text-decoration: none; font-variant-numeric: tabular-nums; box-shadow: 0 20px 40px -24px color-mix(in srgb, --accent-- 90%, transparent); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .modulex-cagri-nobetci-ara:hover { transform: translateY(-3px); box-shadow: 0 28px 50px -24px color-mix(in srgb, --accent-- 90%, transparent); }
+  .modulex-cagri-nobetci-aikon { font-size: 1.3em; animation: modulex-cagri-nobetci-cal 2.2s ease-in-out infinite; }
+  .modulex-cagri-nobetci-eylem .modulex-cagri-nobetci-cta { margin: 0; }
+  @keyframes modulex-cagri-nobetci-ikaz { to { background-position: 50.91px 0; } }
+  @keyframes modulex-cagri-nobetci-nabiz { from { transform: scale(0.6); opacity: 1; } to { transform: scale(1.8); opacity: 0; } }
+  @keyframes modulex-cagri-nobetci-cal { 0%, 70%, 100% { transform: rotate(0); } 78% { transform: rotate(-14deg); } 86% { transform: rotate(12deg); } }
+  @media (max-width: 768px) {
+    .modulex-cagri-nobetci-kutu { grid-template-columns: minmax(0, 1fr); }
+    .modulex-cagri-nobetci-ara { min-height: 68px; }
+  }
+  .modulex-cagri-nobetci-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-nobetci-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-nobetci-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-nobetci-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-nobetci-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-nobetci-myazi strong { font-weight: 700; }
+  .modulex-cagri-nobetci-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-nobetci-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-nobetci-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-nobetci-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-nobetci-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-nobetci :is(.modulex-cagri-nobetci-baslik, .modulex-cagri-nobetci-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-nobetci-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-nobetci { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-cagri-nobetci *, .modulex-cagri-nobetci *::before, .modulex-cagri-nobetci *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-cagri-nobetci";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const nobet = (s, P) => {
+        const e = s.querySelector("[data-nobet]");
+        if (!e) return;
+        const m = /^(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2}):(\d{2})$/.exec(String(e.dataset.nobet || "").trim());
+        const yazi = e.querySelector("[data-nobet-yazi]");
+        const hesap = () => {
+          let acik = true;
+          if (m) {
+            const b = +m[1] * 60 + +m[2];
+            const son = +m[3] * 60 + +m[4];
+            const t = new Date();
+            const n = t.getHours() * 60 + t.getMinutes();
+            acik = b === son || (b < son ? n >= b && n < son : n >= b || n < son);
+          }
+          s.classList.toggle(P + "--acik", acik);
+          s.classList.toggle(P + "--kapali", !acik);
+          const metin = acik ? e.dataset.acik : e.dataset.kapali;
+          if (yazi) { yazi.textContent = metin || ""; yazi.hidden = !metin; }
+        };
+        hesap();
+        setInterval(hesap, 60000);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      nobet(s, P, az);
+    });
+  })();
+</script>
