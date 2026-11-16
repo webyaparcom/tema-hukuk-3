@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "iojbjwi13r",
+      "name": {
+        "tr": "Çalışma alanları",
+        "en": "Practice areas",
+        "ar": "مجالات العمل"
+      },
+      "description": {
+        "tr": "Kartı sürükleyin ya da oklarla çevirin. İlkeler bilgilendirme amaçlıdır; sonuç vaadi içermez.",
+        "en": "Drag a card or use the arrows. The principles are for information only and promise no outcome.",
+        "ar": "اسحب البطاقة أو استخدم الأسهم. المبادئ لأغراض إعلامية ولا تتضمن وعدًا بنتيجة."
+      },
+      "path": "hizmetler",
+      "icon": "work",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "uke36l",
+          "8hme4v"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Büro",
+        "en": "The office",
+        "ar": "المكتب"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "6li6uf",
+          "8hme4v"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Büronun çalışma ilkeleri ve avukatları; bilgilendirme amaçlıdır.",
+        "en": "The office’s working principles and lawyers; for information only.",
+        "ar": "مبادئ عمل المكتب ومحاموه؛ لأغراض إعلامية فقط."
+      }
+    },
+    {
+      "id": "hpb0dy88i2",
+      "name": {
+        "tr": "Avukatlar",
+        "en": "Lawyers",
+        "ar": "المحامون"
+      },
+      "description": {
+        "tr": "Kurgusal avukat profilleri ve çalışma alanları.",
+        "en": "Fictional lawyer profiles and practice areas.",
+        "ar": "ملفات محامين افتراضية ومجالات عملهم."
+      },
+      "path": "ekip",
+      "icon": "groups",
+      "category": "hakkimizda",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "nsf5g6",
+          "8hme4v"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "Ofislerimiz",
+        "en": "Our offices",
+        "ar": "مكاتبنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "s9tfhf",
+          "k8mp01",
+          "8hme4v"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Merkez ofis ve iki görüşme noktası; yol tarifi ve harita.",
+        "en": "The main office and two meeting points; directions and map.",
+        "ar": "المكتب الرئيسي ونقطتا لقاء؛ الاتجاهات والخريطة."
+      }
+    }
+  ],
+  "desc": []
+}

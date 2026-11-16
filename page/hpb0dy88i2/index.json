@@ -1,0 +1,40 @@
+{
+  "id": "hpb0dy88i2",
+  "name": {
+    "tr": "Avukatlar",
+    "en": "Lawyers",
+    "ar": "المحامون"
+  },
+  "description": {
+    "tr": "Kurgusal avukat profilleri ve çalışma alanları.",
+    "en": "Fictional lawyer profiles and practice areas.",
+    "ar": "ملفات محامين افتراضية ومجالات عملهم."
+  },
+  "keyword": {
+    "tr": "ekip, kadro",
+    "en": "team, staff",
+    "ar": "فريق، طاقم"
+  },
+  "path": "ekip",
+  "icon": "groups",
+  "category": "hakkimizda",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "nsf5g6",
+      "8hme4v"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Avukatlar",
+    "en": "Lawyers",
+    "ar": "المحامون"
+  },
+  "date": "2026-11-16T16:00:26.274Z",
+  "update": "2026-11-16T16:14:17.273Z"
+}

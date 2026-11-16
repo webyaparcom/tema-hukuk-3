@@ -1,0 +1,40 @@
+{
+  "id": "iojbjwi13r",
+  "name": {
+    "tr": "Çalışma alanları",
+    "en": "Practice areas",
+    "ar": "مجالات العمل"
+  },
+  "description": {
+    "tr": "Kartı sürükleyin ya da oklarla çevirin. İlkeler bilgilendirme amaçlıdır; sonuç vaadi içermez.",
+    "en": "Drag a card or use the arrows. The principles are for information only and promise no outcome.",
+    "ar": "اسحب البطاقة أو استخدم الأسهم. المبادئ لأغراض إعلامية ولا تتضمن وعدًا بنتيجة."
+  },
+  "keyword": {
+    "tr": "Çalışma ilkeleri",
+    "en": "Working principles",
+    "ar": "مبادئ العمل"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "uke36l",
+      "8hme4v"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Çalışma alanları",
+    "en": "Practice areas",
+    "ar": "مجالات العمل"
+  },
+  "date": "2026-11-16T16:00:26.265Z",
+  "update": "2026-11-16T16:14:17.265Z"
+}

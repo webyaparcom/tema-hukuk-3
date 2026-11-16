@@ -1,0 +1,48 @@
+{
+  "name": {
+    "tr": "Ofislerimiz",
+    "en": "Our offices",
+    "ar": "مكاتبنا"
+  },
+  "status": "play",
+  "category": "",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 3,
+  "icon": "call",
+  "desing": {
+    "header": [],
+    "body": [
+      "s9tfhf",
+      "k8mp01",
+      "8hme4v"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Merkez ofis ve iki görüşme noktası; yol tarifi ve harita.",
+    "en": "The main office and two meeting points; directions and map.",
+    "ar": "المكتب الرئيسي ونقطتا لقاء؛ الاتجاهات والخريطة."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Ofislerimiz",
+    "en": "Our offices",
+    "ar": "مكاتبنا"
+  },
+  "keyword": {
+    "tr": "iletişim",
+    "en": "contact",
+    "ar": "اتصال"
+  },
+  "text": {},
+  "update": "2026-11-16T16:14:17.276Z",
+  "date": "2026-10-30"
+}
