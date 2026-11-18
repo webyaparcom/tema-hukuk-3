@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Kente dağılmış görüşme noktalarıyla ulaşılabilir, sakin bir hukuk bürosu olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be an approachable, calm law office with meeting points across the city.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مكتب محاماة هادئًا يسهل الوصول إليه عبر نقاط لقاء في أنحاء المدينة.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مكتب محاماة هادئًا يسهل الوصول إليه عبر نقاط لقاء في أنحاء المدينة.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Eine ruhige, gut erreichbare Anwaltskanzlei mit über die Stadt verteilten Sprechstellen zu sein.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Быть спокойной и доступной юридической фирмой с пунктами приёма по всему городу.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T16:00:26.138Z",
   "update": "2026-11-16T16:14:17.281Z",

@@ -4,12 +4,16 @@
   "description": {
     "tr": "Sütun Hukuk: ticaret, iş ve gayrimenkul hukukunda bilgilendirme ve ön görüşme; üç görüşme noktası. Demo site; içerik kurgusaldır.",
     "en": "Sutun Law: information and initial consultations on commercial, employment and property law; three meeting points. Demo site; content is fictional.",
-    "ar": "سوتون للمحاماة: معلومات واستشارات أولية في القانون التجاري وقانون العمل والعقارات؛ ثلاث نقاط لقاء. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "سوتون للمحاماة: معلومات واستشارات أولية في القانون التجاري وقانون العمل والعقارات؛ ثلاث نقاط لقاء. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Sütun Hukuk: Information und Vorgespräch zu Handels-, Arbeits- und Immobilienrecht; drei Beratungsstellen. Demo-Website; der Inhalt ist fiktiv.",
+    "ru": "Sütun Hukuk: информация и предварительная беседа по торговому, трудовому и земельному праву; три пункта приёма. Демонстрационный сайт; содержимое вымышленное."
   },
   "keyword": {
     "tr": "hukuk bürosu, ticaret hukuku, iş hukuku, kira hukuku",
     "en": "law office, commercial law, employment law, lease law",
-    "ar": "مكتب محاماة، القانون التجاري، قانون العمل، قانون الإيجار"
+    "ar": "مكتب محاماة، القانون التجاري، قانون العمل، قانون الإيجار",
+    "de": "Anwaltskanzlei, Handelsrecht, Arbeitsrecht, Mietrecht",
+    "ru": "юридическая контора, торговое право, трудовое право, арендное право"
   },
   "category": "Kurumsal",
   "name": "Sütun Hukuk",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

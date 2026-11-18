@@ -2,7 +2,9 @@
   "name": {
     "tr": "Büro",
     "en": "The office",
-    "ar": "المكتب"
+    "ar": "المكتب",
+    "de": "Büro",
+    "ru": "Офис"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Büronun çalışma ilkeleri ve avukatları; bilgilendirme amaçlıdır.",
     "en": "The office’s working principles and lawyers; for information only.",
-    "ar": "مبادئ عمل المكتب ومحاموه؛ لأغراض إعلامية فقط."
+    "ar": "مبادئ عمل المكتب ومحاموه؛ لأغراض إعلامية فقط.",
+    "de": "Arbeitsgrundsätze und Anwälte der Kanzlei; zu Informationszwecken.",
+    "ru": "Принципы работы бюро и его адвокаты; в информационных целях."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Büro",
     "en": "The office",
-    "ar": "المكتب"
+    "ar": "المكتب",
+    "de": "Büro",
+    "ru": "Офис"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T16:14:17.269Z",

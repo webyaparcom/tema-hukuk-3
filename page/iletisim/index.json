@@ -2,7 +2,9 @@
   "name": {
     "tr": "Ofislerimiz",
     "en": "Our offices",
-    "ar": "مكاتبنا"
+    "ar": "مكاتبنا",
+    "de": "Unsere Büros",
+    "ru": "Наши офисы"
   },
   "status": "play",
   "category": "",
@@ -24,7 +26,9 @@
   "description": {
     "tr": "Merkez ofis ve iki görüşme noktası; yol tarifi ve harita.",
     "en": "The main office and two meeting points; directions and map.",
-    "ar": "المكتب الرئيسي ونقطتا لقاء؛ الاتجاهات والخريطة."
+    "ar": "المكتب الرئيسي ونقطتا لقاء؛ الاتجاهات والخريطة.",
+    "de": "Zentrales Büro und zwei Beratungsstellen; Anfahrt und Karte.",
+    "ru": "Главный офис и два пункта приёма; маршрут и карта."
   },
   "spot": {
     "tr": "",
@@ -35,12 +39,16 @@
   "title": {
     "tr": "Ofislerimiz",
     "en": "Our offices",
-    "ar": "مكاتبنا"
+    "ar": "مكاتبنا",
+    "de": "Unsere Büros",
+    "ru": "Наши офисы"
   },
   "keyword": {
     "tr": "iletişim",
     "en": "contact",
-    "ar": "اتصال"
+    "ar": "اتصال",
+    "de": "Kontakt",
+    "ru": "контакты"
   },
   "text": {},
   "update": "2026-11-16T16:14:17.276Z",

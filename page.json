@@ -5,12 +5,16 @@
       "name": {
         "tr": "Çalışma alanları",
         "en": "Practice areas",
-        "ar": "مجالات العمل"
+        "ar": "مجالات العمل",
+        "de": "Schwerpunkte",
+        "ru": "Направления"
       },
       "description": {
         "tr": "Kartı sürükleyin ya da oklarla çevirin. İlkeler bilgilendirme amaçlıdır; sonuç vaadi içermez.",
         "en": "Drag a card or use the arrows. The principles are for information only and promise no outcome.",
-        "ar": "اسحب البطاقة أو استخدم الأسهم. المبادئ لأغراض إعلامية ولا تتضمن وعدًا بنتيجة."
+        "ar": "اسحب البطاقة أو استخدم الأسهم. المبادئ لأغراض إعلامية ولا تتضمن وعدًا بنتيجة.",
+        "de": "Karte ziehen oder mit den Pfeilen drehen. Die Prinzipien dienen nur der Information und versprechen kein Ergebnis.",
+        "ru": "Перетащите карту или используйте стрелки. Принципы носят информационный характер и не гарантируют результата."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Büro",
         "en": "The office",
-        "ar": "المكتب"
+        "ar": "المكتب",
+        "de": "Büro",
+        "ru": "Офис"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Büronun çalışma ilkeleri ve avukatları; bilgilendirme amaçlıdır.",
         "en": "The office’s working principles and lawyers; for information only.",
-        "ar": "مبادئ عمل المكتب ومحاموه؛ لأغراض إعلامية فقط."
+        "ar": "مبادئ عمل المكتب ومحاموه؛ لأغراض إعلامية فقط.",
+        "de": "Arbeitsgrundsätze und Anwälte der Kanzlei; zu Informationszwecken.",
+        "ru": "Принципы работы бюро и его адвокаты; в информационных целях."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Avukatlar",
         "en": "Lawyers",
-        "ar": "المحامون"
+        "ar": "المحامون",
+        "de": "Anwälte",
+        "ru": "Юристы"
       },
       "description": {
         "tr": "Kurgusal avukat profilleri ve çalışma alanları.",
         "en": "Fictional lawyer profiles and practice areas.",
-        "ar": "ملفات محامين افتراضية ومجالات عملهم."
+        "ar": "ملفات محامين افتراضية ومجالات عملهم.",
+        "de": "Fiktive Anwaltsprofile und Tätigkeitsbereiche.",
+        "ru": "Условные профили адвокатов и области практики."
       },
       "path": "ekip",
       "icon": "groups",
@@ -84,7 +96,9 @@
       "name": {
         "tr": "Ofislerimiz",
         "en": "Our offices",
-        "ar": "مكاتبنا"
+        "ar": "مكاتبنا",
+        "de": "Unsere Büros",
+        "ru": "Наши офисы"
       },
       "status": "play",
       "id": "iletisim",
@@ -106,7 +120,9 @@
       "description": {
         "tr": "Merkez ofis ve iki görüşme noktası; yol tarifi ve harita.",
         "en": "The main office and two meeting points; directions and map.",
-        "ar": "المكتب الرئيسي ونقطتا لقاء؛ الاتجاهات والخريطة."
+        "ar": "المكتب الرئيسي ونقطتا لقاء؛ الاتجاهات والخريطة.",
+        "de": "Zentrales Büro und zwei Beratungsstellen; Anfahrt und Karte.",
+        "ru": "Главный офис и два пункта приёма; маршрут и карта."
       }
     }
   ],
