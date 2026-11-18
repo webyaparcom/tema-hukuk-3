@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Her dosyada yazılı yol haritası, tek sorumlu avukat ve mesleki sır yükümlülüğü.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>A written roadmap, one responsible lawyer and professional secrecy on every file.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>خارطة طريق مكتوبة ومحامٍ مسؤول واحد وواجب السر المهني في كل ملف.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>خارطة طريق مكتوبة ومحامٍ مسؤول واحد وواجب السر المهني في كل ملف.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>In jeder Akte eine schriftliche Roadmap, ein verantwortlicher Anwalt und die berufliche Verschwiegenheitspflicht.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>В каждом деле письменная дорожная карта, один ответственный адвокат и обязанность профессиональной тайны.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T16:00:26.138Z",
   "update": "2026-11-16T16:14:17.282Z",

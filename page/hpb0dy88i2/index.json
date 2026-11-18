@@ -3,17 +3,23 @@
   "name": {
     "tr": "Avukatlar",
     "en": "Lawyers",
-    "ar": "المحامون"
+    "ar": "المحامون",
+    "de": "Anwälte",
+    "ru": "Юристы"
   },
   "description": {
     "tr": "Kurgusal avukat profilleri ve çalışma alanları.",
     "en": "Fictional lawyer profiles and practice areas.",
-    "ar": "ملفات محامين افتراضية ومجالات عملهم."
+    "ar": "ملفات محامين افتراضية ومجالات عملهم.",
+    "de": "Fiktive Anwaltsprofile und Tätigkeitsbereiche.",
+    "ru": "Условные профили адвокатов и области практики."
   },
   "keyword": {
     "tr": "ekip, kadro",
     "en": "team, staff",
-    "ar": "فريق، طاقم"
+    "ar": "فريق، طاقم",
+    "de": "Team, Personal",
+    "ru": "команда, персонал"
   },
   "path": "ekip",
   "icon": "groups",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Avukatlar",
     "en": "Lawyers",
-    "ar": "المحامون"
+    "ar": "المحامون",
+    "de": "Anwälte",
+    "ru": "Юристы"
   },
   "date": "2026-11-16T16:00:26.274Z",
   "update": "2026-11-16T16:14:17.273Z"

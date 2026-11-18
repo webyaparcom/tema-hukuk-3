@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Ticari ve iş ilişkilerinden doğan hukuki süreçleri anlaşılır ve yazılı hâle getirmek.</p>",
     "en": "<h2>Our mission</h2>\n<p>To make legal processes arising from commercial and employment relationships understandable and documented.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>جعل الإجراءات القانونية الناشئة عن العلاقات التجارية وعلاقات العمل مفهومة وموثّقة.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>جعل الإجراءات القانونية الناشئة عن العلاقات التجارية وعلاقات العمل مفهومة وموثّقة.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Rechtliche Verfahren aus Handels- und Geschäftsbeziehungen verständlich und schriftlich nachvollziehbar zu machen.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Делать юридические процедуры, возникающие из коммерческих и деловых отношений, понятными и зафиксированными в письменном виде.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T16:00:26.138Z",
   "update": "2026-11-16T16:14:17.280Z",
